@@ -9,7 +9,7 @@ jobs:
               uses: actions/checkout@v4
               
             - name: Welcome message
-              uses: echo "My first GitHub Action workflow!"
+              run: echo "My first GitHub Action workflow!"
 
             - name: list files
               run: ls 
