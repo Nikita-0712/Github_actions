@@ -14,15 +14,15 @@ jobs:
               run: sudo apt-get install cowsay -y
 
             - name: Execute Cowsay CMD
-              run: cowsay -f dragon "Hello World" > dragon.txt
+              run: cowsay -f dragon "Hello World" >> dragon.txt
 
             - name: Test file exists
-              run: grep -i"dragon"dragon.txt
+              run: grep -i "dragon"dragon.txt
 
             - name: Read files
               run: cat dragon.txt
 
             - name: List Repo files
-              run: ls-ltra
+              run: ls -ltra
 
               
